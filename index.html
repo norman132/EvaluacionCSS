@@ -6,10 +6,11 @@
     <title>Evaluación CSS & RWD</title>
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo_base.css">
+    <link rel="stylesheet" href="css/estilo_inicio.css">
   </head>
 
   <body>
-    <div class="contenido">
+    <div class="content">
       <!--Titulo y Menú para Navegación-->
       <header>
         <h1>Comenzando con la fotografía</h1>
@@ -22,26 +23,25 @@
         </nav>
       </header>
       <!--Imagenes para Contenido de la Página-->
-      <section>
-        <img src="img/imagen1.jpg">
+      <section id="principal">
+        <img src="img/imagen1.jpg" id="imgprincipal" class="sombra">
       </section>
-      <section>
+      <section id="secundarias">
 		      <div>
 			      <a href="paisajes.html">
-			        <img src="img/imagen2.jpg" >
+			        <img src="img/imagen2.jpg" id="imgpaisaje" class="sombra">
 			        <span><strong>Paisajes</strong></span>
 			      </a>
 		      </div>
 		      <div>
 			      <a href="retratos.html">
-			        <img src="img/imagen3.jpg">
-			        <p><strong>Retratos</strong></p>
+			        <img src="img/imagen3.jpg" id="imgretratos" class="sombra">
+			        <span><strong>Retratos</strong></span>
 			      </a>
 		      </div>
 	    </section>
       <!--Secciones para el Footer-->
       <footer>
-        <section>
          <!--Contacto-->
           <div class="caja1">
             <h2>Contacto</h2>
@@ -49,15 +49,11 @@
               <p>Edificio Reforma Zona 4</p>
               <p>Telefono: 2490-0000</p>
           </div>
-        </section>
-        <section>
          <!--Terminos-->
           <div class="caja2">
             <h2>Términos y Condiciones</h2>
               <p>Conoce los Términos...</p>
           </div>
-        </section>
-        <section>
          <!-- Redes Sociales-->
           <div class="caja3">
             <h2>Social</h2>
@@ -65,14 +61,11 @@
               <p><a href="http://youtube.com/" rel="alternate">Youtube</a></p>
               <p><a href="http://twitter.com/" rel="me">twitter</a></p>
           </div>
-        </section>
-        <section>
           <div class="caja4">
             <h2>Derechos</h2>
               <p>Norman Martinez</p>
               <p>Copyright (c) 2017</p>
           </div>
-        </section>
       </footer>
     </div>
   </body>

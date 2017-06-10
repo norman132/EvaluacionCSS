@@ -16,6 +16,14 @@ header h1{
   float: left;
 }
 
+.content {
+	margin: 0 auto;
+   -webkit-animation: slide 1.5s forwards;
+}
+.sombra {
+  box-shadow: 2px 2px 2px #02115a;
+}
+
 #opcionesnav{
   width: 50%;
   float: left;
@@ -44,4 +52,60 @@ footer {
 	border-radius: 0 0 10px 10px;
 	display: flex;
 	flex-flow: row wrap;
+}
+
+@media (max-width: 900px) {
+.content {
+	width: 100%;
+}
+header {
+	min-height: 200px;
+}
+header h1 {
+	width: 100%;
+	text-align: center;
+}
+#opcionesnav {
+	width: 100%;
+}
+ul {
+	text-align: center;
+}
+footer {
+	width: 100%;
+	min-height: 300px;
+}
+.caja1, .caja2, .caja3, .caja4 {
+	width: 100%;
+	height: auto;
+	padding: 1%2.5% 1% 2.5%;
+}
+}
+
+@media (min-width: 900px) {
+.content {
+	width: 900px;
+}
+header {
+	width: 900px;
+	min-height: 80px;
+}
+footer {
+	width: 900px;
+	min-height: 200px;
+}
+.caja1, .caja2, .caja3, .caja4 {
+	width: 20%;
+	height: auto;
+	padding: 1%2.5% 1% 2.5%;
+}
+}
+@-webkit-keyframes slide{
+  0%{
+    margin-top: 150%;
+  }60%{
+    margin-top: -5%;
+  }100%{
+    margin-top: 0%;
+  }
 }
