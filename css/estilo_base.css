@@ -21,7 +21,7 @@ header h1{
    -webkit-animation: slide 1.5s forwards;
 }
 .sombra {
-  box-shadow: 2px 2px 2px #02115a;
+  box-shadow: 2px 2px 2px #02010a;
 }
 
 #opcionesnav{
@@ -82,6 +82,11 @@ footer {
 }
 }
 
+#galeria{
+  background-color: #d5c75f;
+  display: flex;
+  flex-flow: row wrap;
+}
 @media (min-width: 900px) {
 .content {
 	width: 900px;
